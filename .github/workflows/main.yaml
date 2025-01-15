@@ -36,7 +36,10 @@ jobs:
       # Outputs to the './_site' directory by default
       run: |
         aws s3 cp --recursive _site/. s3://yesidevelop.com/
-      
+    - name: Clear CDN cache
+      # Outputs to the './_site' directory by default
+      run: |
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION_ID }} --paths "/"
 
 
       
