@@ -22,5 +22,5 @@ jobs:
     - name: Deploy Site
       run: |
         gem install bundler jekyll --user-install
-        bundle exec jekyll build
+        bundle exec jekyll build --user-install
       
