@@ -39,7 +39,7 @@ jobs:
     - name: Clear CDN cache
       # Outputs to the './_site' directory by default
       run: |
-        aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION_ID }} --paths "/"
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION_ID }} --paths "/*"
 
 
       
