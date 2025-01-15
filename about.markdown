@@ -11,33 +11,49 @@ permalink: /about/
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/_gvWV7GGmH4?si=yxVVyzZo1sJsw73e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Greetings, fellow adventurers! I am Ali Mehdi, and I am DevOps specialist, skilled in many differnet cloud technogologies. I want to share my experience of becoming the DevOps person from developer background. Hope this will help you also if you want to achieve new heights
+# Greetings, Fellow Adventurers!  
 
-### 2013
+I am **Ali Mehdi**, a DevOps Specialist skilled in various cloud technologies. My journey from a developer background to a DevOps expert has been an incredible adventure. I hope sharing my story inspires you to achieve new heights in your career!  
 
-I started my career in 2013 as wordpress developer, plunging into depth of backend / frontend development and exciting projects on jquery / javascript. I got to know about php development. It was a good year as I was a fresher and starter.
+---
 
+## 📜 My Journey  
 
-### 2014-17
+### **2013: The Beginning**  
+I began my career in 2013 as a **WordPress Developer**, diving deep into backend and frontend development. I worked on exciting projects with **jQuery** and **JavaScript** and gained exposure to **PHP development**. It was an excellent start as a fresher eager to learn and grow.
 
-But suddenly I realised that Workdpress Development is very basic for me so I started to learn different technologies like MongoDB, Laravel etc
+---
 
-I was mostly the part of web development, with the api development, testing, implementation. Worked with different clients and helped them grow
+### **2014-2017: Expanding Horizons**  
+Realizing that WordPress development wasn’t challenging enough, I started exploring:  
+- **MongoDB**  
+- **Laravel**  
 
-### 2017-20
+During this time, I focused on **web development**, including **API development**, testing, and implementation. I collaborated with clients worldwide, helping them grow their businesses through robust web solutions.
 
-As my experience grew, I started working on server side with AWS. Got AWS Developer Associate certification. Worked with high profile companies. Worked on EC2, RDS, EFS, EBS and S3, Cloudformation
+---
 
-I did my first AWS certification 🥇 Developer Associate in 2017
+### **2017-2020: The Cloud Era**  
+As my expertise grew, I ventured into **server-side development** and the **AWS ecosystem**:  
+- Worked extensively with **EC2**, **RDS**, **EFS**, **EBS**, **S3**, and **CloudFormation**.  
+- Achieved my first AWS certification: 🥇 **AWS Developer Associate (2017)**.  
+- Worked with high-profile companies on scalable cloud solutions.
 
-### 2020-Present
+---
 
-I further sharpend my skills by learning kubernetes deployments, infrastructure provisioning, IAAC, boto3.
+### **2020-Present: DevOps Mastery**  
+I sharpened my skills further by diving into:  
+- **Kubernetes deployments**  
+- **Infrastructure provisioning**  
+- **Infrastructure as Code (IaC)** tools  
+- **Boto3** for AWS automation  
 
-I worked on python to develop AI apps. Worked on Django, Tensorflow, Flask and other apps
+I also explored Python to build **AI applications** using:  
+- **Django**, **TensorFlow**, **Flask**, and more.  
 
-I then did 🥇 CKAD certification in 2021
+In 2021, I achieved the 🥇 **Certified Kubernetes Application Developer (CKAD)** certification, marking a significant milestone in my DevOps journey.
 
-### Summary
+---
 
-Still a long way to go. Hoping for the best!!!
+## ✨ Summary  
+The journey continues, and there’s still a long way to go. I’m excited for what’s ahead and always striving to learn and grow. **Hoping for the best!** 🚀  
