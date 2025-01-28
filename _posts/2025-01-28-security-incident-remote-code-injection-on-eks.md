@@ -42,7 +42,7 @@ Despite the gaps, some proactive measures helped us respond effectively:
 After identifying the vulnerabilities, we implemented the following measures to **secure the environment**:  
 
 1. **Non-root containers**: Updated containers to run as non-root users and removed escalated privileges.  
-2. **IMDSv2 implementation**: Migrated nodes to IMDSv2, which uses session tokens and protects metadata from SSRF attacks. [Learn more about IMDSv2](https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-and-restrict-server-metadata-access-with-imdsv2/).  
+2. **IMDSv2 implementation**: Migrated nodes to IMDSv2, which uses session tokens and protects metadata from SSRF attacks. [Learn more about IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html).  
 3. **IAM Roles for Service Accounts (IRSA)**: Enabled granular access control for pods.  
 4. **HSTS on Cloudflare**: Enforced HTTPS connections at the browser level.  
 5. **Disabled `file_get_contents()`**: Replaced it with `cURL` and enforced HTTPS for fetching remote files.  
