@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How We Secured a Kubernetes Cluster After a Remote Code Injection Incident"
-date:   2025-01-28 05:48:12 +0500
-categories: eks security cloudflare imds
+title:  "Proactive Scaling: Anticipating Demand for Smoother User Experiences"
+date:   2025-01-29 06:40:10 +0500
+categories: eks autoscaling cronjob
 author: Ali Mehdi
 ---
 ## Proactive Scaling: Anticipating Demand for Smoother User Experiences
