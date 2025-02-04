@@ -34,8 +34,8 @@ github_username:  yesidevelop
 theme: minima
 plugins:
   - jekyll-feed
-# css:
-#   - assets/css/main.scss
+css:
+  - assets/css/main.scss
 
 # Exclude from processing.
 # The following items will not be processed, by default.
