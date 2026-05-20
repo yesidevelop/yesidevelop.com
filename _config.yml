@@ -23,9 +23,9 @@ email: alimehdi.official@gmail.com
 role: AI Engineer
 location: Lahore, Pakistan
 description: >-
-  AI Engineer building production LLM applications, RAG systems, and MLOps pipelines.
+  AI Engineer building production LLM applications, RAG systems, ComfyUI image pipelines, and MLOps.
   Background in full-stack development and cloud-native infrastructure (AWS, Kubernetes).
-  Experienced with OpenAI, LangChain, Hugging Face, vector databases, and model deployment on AWS.
+  Experienced with OpenAI, LangChain, ComfyUI, Hugging Face, vector databases, and model deployment on AWS.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yesidevelop.com" # the base hostname & protocol for your site, e.g. http://example.com

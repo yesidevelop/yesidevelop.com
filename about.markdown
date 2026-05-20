@@ -14,7 +14,7 @@ permalink: /about/
       I design production LLM systems—RAG, agents, APIs—and the MLOps stack that keeps them reliable under real traffic.
     </p>
     <p class="about-intro-sub">
-      My career moved from full-stack web development → cloud &amp; Kubernetes platform work → generative AI in production.
+      My career moved from full-stack web development → cloud &amp; Kubernetes platform work → generative AI in production—including <strong>ComfyUI</strong> pipelines teams use for real marketing deliverables.
       Scroll the timeline below to see how each phase built the next.
     </p>
   </header>
@@ -150,6 +150,7 @@ permalink: /about/
           <li>Enterprise RAG over internal docs (LangChain, Pinecone, FastAPI)</li>
           <li>Streaming LLM APIs with Redis session memory</li>
           <li>MLflow experiment tracking and SageMaker fine-tuning</li>
+          <li>ComfyUI workflows for repeatable image generation (see 2024)</li>
         </ul>
         <div class="timeline-tags">
           <span>LangChain</span><span>OpenAI</span><span>RAG</span><span>FastAPI</span><span>MLflow</span>
@@ -157,23 +158,49 @@ permalink: /about/
       </div>
     </article>
 
-    <article class="timeline-item timeline-item--current" data-aos="fade-up" data-aos-delay="50">
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2024">2024</time>
+      </div>
+      <div class="timeline-card timeline-card--ai">
+        <span class="timeline-badge timeline-badge--ai"><i class="bi bi-image"></i> Real-world</span>
+        <span class="timeline-phase">Generative media</span>
+        <h3>ComfyUI Production Pipelines</h3>
+        <p>
+          A marketing team was spending days in Photoshop creating product hero images and social crops for each SKU.
+          I built <strong>ComfyUI</strong> node workflows that take a plain product photo and output on-brand backgrounds,
+          lighting, and sizes—then wired them to a <strong>FastAPI</strong> job queue and <strong>GPU</strong> worker so the team could batch hundreds of assets overnight to <strong>S3/CDN</strong>.
+        </p>
+        <ul class="timeline-highlights">
+          <li>ControlNet + IP-Adapter for consistent brand look across variants</li>
+          <li>ComfyUI API automation—no manual clicking through the UI for production runs</li>
+          <li>Replaced ~3 days/week of designer batch work with a repeatable pipeline</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>ComfyUI</span><span>Stable Diffusion</span><span>ControlNet</span><span>FastAPI</span><span>GPU</span><span>S3</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline-item timeline-item--current" data-aos="fade-up" data-aos-delay="100">
       <div class="timeline-node">
         <span class="timeline-dot timeline-dot--pulse"></span>
-        <time class="timeline-year" datetime="2024">Now</time>
+        <time class="timeline-year" datetime="2025">Now</time>
       </div>
       <div class="timeline-card timeline-card--current">
         <span class="timeline-badge timeline-badge--live"><i class="bi bi-circle-fill"></i> Present</span>
         <span class="timeline-phase">Today</span>
-        <h3>AI Engineer · LLMs · MLOps</h3>
-        <p>Building agent workflows, vector search systems, and inference platforms on EKS—with observability, guardrails, and cost controls baked in.</p>
+        <h3>AI Engineer · LLMs · MLOps · ComfyUI</h3>
+        <p>Building agent workflows, vector search, ComfyUI image pipelines, and inference platforms on EKS—with observability, guardrails, and cost controls baked in.</p>
         <ul class="timeline-highlights">
           <li>Agents &amp; tool-calling with LangGraph and structured outputs</li>
+          <li>ComfyUI + LLM stacks: text copilots and generative visuals in one platform</li>
           <li>LLM observability: LangSmith, Phoenix, Grafana dashboards</li>
           <li>GPU inference on EKS, Bedrock, and SageMaker endpoints</li>
         </ul>
         <div class="timeline-tags">
-          <span>LangGraph</span><span>Pinecone</span><span>EKS</span><span>LangSmith</span><span>SageMaker</span>
+          <span>LangGraph</span><span>ComfyUI</span><span>Pinecone</span><span>EKS</span><span>LangSmith</span>
         </div>
       </div>
     </article>

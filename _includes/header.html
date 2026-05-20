@@ -9,10 +9,21 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
+        {% assign path = page.url | default: '' %}
+        {% assign is_home = false %}
+        {% assign is_about = false %}
+        {% assign is_blog = false %}
+        {% if page.layout == 'home' or path == '/' or path == '/index.html' %}
+          {% assign is_home = true %}
+        {% elsif page.layout == 'about' or path contains '/about' %}
+          {% assign is_about = true %}
+        {% elsif page.layout == 'blog' or page.layout == 'post' or path contains '/blog' %}
+          {% assign is_blog = true %}
+        {% endif %}
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <li><a href="/"{% if is_home %} class="active"{% endif %}>Home</a></li>
+          <li><a href="/about/"{% if is_about %} class="active"{% endif %}>About</a></li>
+          <li><a href="/blog/"{% if is_blog %} class="active"{% endif %}>Blog</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
