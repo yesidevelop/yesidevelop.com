@@ -1,14 +1,10 @@
 ---
 layout: default
 ---
-<article class="blog-post">
+<article class="blog-post container about-prose">
   <h1 class="display-4">{{ page.title }}</h1>
-  <p class="lead text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+  <p class="lead text-muted">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
   <div class="blog-post-content">
     {{ content }}
   </div>
 </article>
-<footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; {{ site.year }} Ali Mehdi| <a href="mailto:alimehdi.official@gmail.com" class="text-white">Contact</a></p>
-  </footer>
-  

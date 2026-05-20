@@ -8,22 +8,33 @@
   {% include head.html %}
 </head>
 
-<body class="index-page">
+<body class="ai-theme index-page">
 
   {% include header.html %}
 
   <main class="main">
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero hero-ai section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
 
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Ali Mehdi</h2>
-            <p class="mb-2"><strong>{{ site.role }}</strong> · {{ site.location }}</p>
-            <p>I build production LLM apps—RAG pipelines, AI APIs, agents, and MLOps on AWS & Kubernetes. Former full-stack and platform engineer; now focused on shipping AI that works under real load.</p>
+            <span class="hero-badge">Building production AI systems</span>
+            <h1 class="hero-title">Ali Mehdi</h1>
+            <p class="hero-role">{{ site.role }}</p>
+            <p class="hero-location">{{ site.location }}</p>
+            <p class="hero-desc">I build production LLM apps—RAG pipelines, AI APIs, agents, and MLOps on AWS &amp; Kubernetes. Former full-stack and platform engineer; now focused on shipping AI that works under real load.</p>
+            <div class="hero-tags">
+              <span class="hero-tag">RAG</span>
+              <span class="hero-tag">LangChain</span>
+              <span class="hero-tag">OpenAI</span>
+              <span class="hero-tag">MLOps</span>
+              <span class="hero-tag">FastAPI</span>
+            </div>
             <a href="/about" class="btn-get-started">About Me</a>
-            <a href="/blog" class="btn-get-started ms-2">Technical Blog</a>
+            <a href="/blog" class="btn-get-started btn-outline ms-2">Technical Blog</a>
           </div>
         </div>
       </div>
@@ -31,7 +42,7 @@
     </section><!-- /Hero Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+    <section id="skills" class="skills section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Core Skills</h2>
@@ -113,7 +124,7 @@
     </section><!-- /Skills Section -->
 
     <!-- Tools Section -->
-    <section id="tools" class="services section">
+    <section id="tools" class="services section ai-section-alt">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Tools & Platforms</h2>
@@ -177,7 +188,7 @@
     </section><!-- /Tools Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <section id="portfolio" class="portfolio section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>AI Projects</h2>
@@ -300,7 +311,7 @@
     </div>
   </main>
 
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer ai-footer dark-background">
     {% include footer.html %}
   </footer>
 
