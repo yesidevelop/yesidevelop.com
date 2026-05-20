@@ -20,15 +20,18 @@
 
 title: Ali Mehdi
 email: alimehdi.official@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hi I am a certified DevOps engineer, striving to transfer knowledge which I have learned throughout my career
-  🥇 Certified Kubernetes: CKAD, CKA, 🥇 Certified AWS: Developer Associate
+role: AI Engineer
+location: Lahore, Pakistan
+description: >-
+  AI Engineer building production LLM applications, RAG systems, and MLOps pipelines.
+  Background in full-stack development and cloud-native infrastructure (AWS, Kubernetes).
+  Experienced with OpenAI, LangChain, Hugging Face, vector databases, and model deployment on AWS.
 
-  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yesidevelop.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: imcoder001
-github_username:  yesidevelop
+github_username: yesidevelop
+linkedin_username: alimehdi
 
 # Build settings
 theme: minima
