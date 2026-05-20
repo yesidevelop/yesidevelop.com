@@ -4,105 +4,190 @@ title: About me
 permalink: /about/
 ---
 
-# From Full-Stack Developer to AI Engineer
+<div class="about-page">
 
-## Video Intro
+  <header class="about-intro" data-aos="fade-up">
+    <span class="about-intro-label">About</span>
+    <h1>From code to cloud to AI</h1>
+    <p class="about-intro-lead">
+      I'm <strong>Ali Mehdi</strong>, an <strong>AI Engineer</strong> in {{ site.location }}.
+      I design production LLM systems—RAG, agents, APIs—and the MLOps stack that keeps them reliable under real traffic.
+    </p>
+    <p class="about-intro-sub">
+      My career moved from full-stack web development → cloud &amp; Kubernetes platform work → generative AI in production.
+      Scroll the timeline below to see how each phase built the next.
+    </p>
+  </header>
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/_gvWV7GGmH4?si=yxVVyzZo1sJsw73e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <section class="experience-timeline" aria-label="Career timeline">
 
-# Greetings!
+    <div class="timeline-track" aria-hidden="true"></div>
 
-I am **Ali Mehdi**, an **AI Engineer** based in Lahore. I design and ship production AI systems—retrieval-augmented generation (RAG), LLM-powered APIs, agent workflows, and the MLOps infrastructure that keeps models reliable in production.
+    <article class="timeline-item" data-aos="fade-up">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2013">2013</time>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-phase">The beginning</span>
+        <h3>WordPress &amp; PHP Developer</h3>
+        <p>Started my career building client websites and custom themes. Learned how to ship for real users—performance, plugins, and maintainable PHP.</p>
+        <ul class="timeline-highlights">
+          <li>WordPress, jQuery, JavaScript front ends</li>
+          <li>PHP backends and theme customization</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>WordPress</span><span>PHP</span><span>jQuery</span>
+        </div>
+      </div>
+    </article>
 
-My path did not start in a research lab. I spent years as a **full-stack developer** and **cloud/DevOps engineer**, which means I care about the whole stack: data pipelines, inference latency, cost controls, observability, and secure deployments—not just notebook prototypes.
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2014">2014–17</time>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-phase">Expanding stack</span>
+        <h3>Full-Stack Web Developer</h3>
+        <p>Moved beyond CMS work into APIs and modern frameworks. Collaborated with international clients on web products end to end.</p>
+        <ul class="timeline-highlights">
+          <li>Laravel applications and REST APIs</li>
+          <li>MongoDB, testing, and deployment workflows</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>Laravel</span><span>MongoDB</span><span>JavaScript</span><span>APIs</span>
+        </div>
+      </div>
+    </article>
 
----
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2017">2017</time>
+      </div>
+      <div class="timeline-card timeline-card--highlight">
+        <span class="timeline-badge"><i class="bi bi-award"></i> Certification</span>
+        <span class="timeline-phase">Cloud foundations</span>
+        <h3>AWS Developer Associate</h3>
+        <p>Earned my first cloud certification and began architecting scalable backends on AWS for production workloads.</p>
+        <ul class="timeline-highlights">
+          <li>EC2, RDS, S3, CloudFormation</li>
+          <li>High-availability patterns for client platforms</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>AWS</span><span>EC2</span><span>RDS</span><span>S3</span>
+        </div>
+      </div>
+    </article>
 
-## What I Work On Today
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2018">2018–20</time>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-phase">Cloud era</span>
+        <h3>Cloud &amp; Backend Engineer</h3>
+        <p>Deepened AWS expertise with enterprise clients—designing infrastructure that scales before traffic spikes, not after.</p>
+        <ul class="timeline-highlights">
+          <li>EFS, EBS, multi-AZ database design</li>
+          <li>Infrastructure automation and cost-aware architecture</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>AWS</span><span>CloudFormation</span><span>EFS</span><span>Architecture</span>
+        </div>
+      </div>
+    </article>
 
-- **LLM applications**: chatbots, document Q&A, summarization, and internal copilots using **OpenAI**, **Anthropic**, and open models via **Hugging Face**
-- **RAG systems**: chunking strategies, embedding models, vector search, reranking, and evaluation with **LangChain** / **LlamaIndex**
-- **Agents & orchestration**: tool-calling flows, structured outputs, and guardrails for business workflows
-- **MLOps & deployment**: containerized inference on **Kubernetes (EKS)**, **SageMaker**, **FastAPI** services, CI/CD for models, and experiment tracking with **MLflow**
-- **AI observability**: tracing prompts, logging token usage, monitoring drift, and debugging bad retrievals with **LangSmith**, **Phoenix (Arize)**, and custom metrics in **Grafana**
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2020">2020–23</time>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-phase">Platform engineering</span>
+        <h3>DevOps &amp; Kubernetes Engineer</h3>
+        <p>Owned cluster operations, IaC, and observability. Built the platform skills that later became my MLOps foundation.</p>
+        <ul class="timeline-highlights">
+          <li>Kubernetes deployments, Terraform, GitOps</li>
+          <li>Prometheus, Grafana, OpenTelemetry pipelines</li>
+          <li>CKAD (2021) and CKA certifications</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>Kubernetes</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span>
+        </div>
+      </div>
+    </article>
 
----
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2021">2021</time>
+      </div>
+      <div class="timeline-card timeline-card--highlight">
+        <span class="timeline-badge"><i class="bi bi-award"></i> CKAD</span>
+        <span class="timeline-phase">Kubernetes depth</span>
+        <h3>Certified Kubernetes Application Developer</h3>
+        <p>Validated hands-on skills designing and operating workloads on Kubernetes—deployments, services, networking, and troubleshooting.</p>
+        <div class="timeline-tags">
+          <span>CKAD</span><span>K8s</span><span>Helm</span>
+        </div>
+      </div>
+    </article>
 
-## Tools & Technologies
+    <article class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-node">
+        <span class="timeline-dot"></span>
+        <time class="timeline-year" datetime="2023">2023</time>
+      </div>
+      <div class="timeline-card timeline-card--ai">
+        <span class="timeline-badge timeline-badge--ai"><i class="bi bi-stars"></i> Pivot</span>
+        <span class="timeline-phase">AI engineering</span>
+        <h3>Generative AI in Production</h3>
+        <p>Shifted focus from pure infrastructure to shipping LLM products—RAG, APIs, evaluation, and model deployment.</p>
+        <ul class="timeline-highlights">
+          <li>Enterprise RAG over internal docs (LangChain, Pinecone, FastAPI)</li>
+          <li>Streaming LLM APIs with Redis session memory</li>
+          <li>MLflow experiment tracking and SageMaker fine-tuning</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>LangChain</span><span>OpenAI</span><span>RAG</span><span>FastAPI</span><span>MLflow</span>
+        </div>
+      </div>
+    </article>
 
-### LLMs & Frameworks
-OpenAI API (GPT-4o, embeddings) · Anthropic Claude · Hugging Face Transformers · LangChain · LlamaIndex · vLLM · Ollama (local dev)
+    <article class="timeline-item timeline-item--current" data-aos="fade-up" data-aos-delay="50">
+      <div class="timeline-node">
+        <span class="timeline-dot timeline-dot--pulse"></span>
+        <time class="timeline-year" datetime="2024">Now</time>
+      </div>
+      <div class="timeline-card timeline-card--current">
+        <span class="timeline-badge timeline-badge--live"><i class="bi bi-circle-fill"></i> Present</span>
+        <span class="timeline-phase">Today</span>
+        <h3>AI Engineer · LLMs · MLOps</h3>
+        <p>Building agent workflows, vector search systems, and inference platforms on EKS—with observability, guardrails, and cost controls baked in.</p>
+        <ul class="timeline-highlights">
+          <li>Agents &amp; tool-calling with LangGraph and structured outputs</li>
+          <li>LLM observability: LangSmith, Phoenix, Grafana dashboards</li>
+          <li>GPU inference on EKS, Bedrock, and SageMaker endpoints</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>LangGraph</span><span>Pinecone</span><span>EKS</span><span>LangSmith</span><span>SageMaker</span>
+        </div>
+      </div>
+    </article>
 
-### Data & Vector Stores
-Pinecone · Chroma · Weaviate · pgvector (PostgreSQL) · Amazon OpenSearch · S3 data lakes
+  </section>
 
-### ML & Experimentation
-Python · PyTorch · scikit-learn · Pandas · Jupyter · MLflow · Weights & Biases · SageMaker Training & Endpoints
+  <section class="about-connect" data-aos="fade-up">
+    <h2>Let's connect</h2>
+    <p>I write about RAG, agents, and MLOps on the <a href="/blog">blog</a>. Open to conversations on production AI—reach out anytime.</p>
+    <div class="about-connect-links">
+      <a href="mailto:{{ site.email }}" class="btn-get-started">Email me</a>
+      <a href="https://github.com/{{ site.github_username }}" class="btn-get-started btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="btn-get-started btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
 
-### Application Layer
-FastAPI · Flask · Django · React · REST & WebSocket APIs · Redis (caching) · Celery (async jobs)
-
-### Cloud & MLOps
-AWS (SageMaker, Bedrock, Lambda, S3, ECR) · Docker · Kubernetes · Terraform · GitHub Actions · EKS · GPU node pools
-
-### Quality & Safety
-Prompt versioning · RAG evaluation (Ragas, custom golden sets) · PII redaction · rate limiting · content filters · SSRF-safe fetch patterns for RAG crawlers
-
----
-
-## My Journey
-
-### **2013–2017: Full-Stack Foundations**
-Started as a **WordPress and PHP developer**, then moved into **Laravel**, **MongoDB**, and **JavaScript** APIs. This phase taught me how real users interact with software—skills I still use when building AI product UIs and backend integrations.
-
-### **2017–2020: Cloud & Scalable Backends**
-Deepened work in the **AWS ecosystem** (EC2, RDS, S3, CloudFormation) and earned **AWS Developer Associate (2017)**. Learned to design systems that scale—essential before putting LLM workloads behind production traffic.
-
-### **2020–2023: Platform Engineering & Kubernetes**
-Led **Kubernetes** deployments, **Terraform** IaC, and observability stacks (**Prometheus**, **Grafana**, **OpenTelemetry**). Earned **CKAD (2021)** and **CKA**. This became the foundation for **MLOps**: serving models, autoscaling inference, secrets management, and secure cluster hardening.
-
-### **2023–Present: AI Engineering**
-Shifted focus to **generative AI in production**:
-- Built **RAG pipelines** over internal PDFs and wikis with hybrid search and citation-backed answers
-- Shipped **FastAPI + OpenAI** microservices with streaming responses and Redis-backed session memory
-- Fine-tuned and evaluated smaller models on domain data; tracked runs in **MLflow**
-- Deployed inference on **EKS** with horizontal pod autoscaling and GPU nodes where needed
-- Wrote about **foundation models**, **Kubernetes security**, and **scheduled scaling** on this blog
-
----
-
-## Selected Projects
-
-| Project | Stack | Outcome |
-|---------|-------|---------|
-| Enterprise document assistant | LangChain, OpenAI embeddings, Pinecone, FastAPI, React | Reduced support lookup time with cited answers from 10k+ internal docs |
-| MLOps on EKS | Kubernetes, MLflow, S3, GitHub Actions | Repeatable model deploys with versioned artifacts and rollback |
-| LLM API gateway | FastAPI, OpenAI, Redis, Prometheus | Centralized API keys, rate limits, and cost dashboards per team |
-| Fine-tune & evaluate (domain QA) | SageMaker, Hugging Face, MLflow | Improved accuracy on niche terminology vs. zero-shot GPT |
-
----
-
-## Certifications & Continuous Learning
-
-- AWS Developer Associate
-- Certified Kubernetes Application Developer (CKAD)
-- Certified Kubernetes Administrator (CKA)
-- Ongoing: advanced RAG evaluation, agent design patterns, and efficient inference (quantization, batching)
-
----
-
-## How I Approach AI Work
-
-1. **Start with the user task**, not the model name—define success metrics before picking GPT vs. open-weights.
-2. **Prototype with APIs**, then optimize cost/latency with caching, smaller models, or self-hosted inference.
-3. **Measure retrieval quality**—most production failures are bad chunks or missing metadata, not weak LLMs.
-4. **Treat prompts and schemas as code**—version them, review in PRs, and test regressions.
-5. **Deploy like any critical service**—health checks, autoscaling, secrets, and incident runbooks.
-
----
-
-## Let's Connect
-
-I share lessons on building AI systems that survive real traffic—not just demos. If you're working on RAG, agents, or MLOps, reach out via [email](mailto:alimehdi.official@gmail.com) or [GitHub](https://github.com/yesidevelop).
-
-**The journey continues—always learning, always shipping.** 🚀
+</div>
