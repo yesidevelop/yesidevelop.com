@@ -1,10 +1,61 @@
----
-layout: default
----
-<article class="blog-post container about-prose">
-  <h1 class="display-4">{{ page.title }}</h1>
-  <p class="lead text-muted">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
-  <div class="blog-post-content">
-    {{ content }}
-  </div>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  {% include head.html %}
+</head>
+
+<body class="ai-theme index-page">
+
+  {% include header.html %}
+
+  <main class="main section">
+    {% assign words = content | number_of_words %}
+    {% assign read_mins = words | divided_by: 200 | plus: 1 %}
+
+    <article class="post-article container blog-container">
+      <header class="post-hero" data-aos="fade-up">
+        <a href="{{ '/blog/' | relative_url }}" class="post-back">
+          <i class="bi bi-arrow-left"></i> Back to blog
+        </a>
+        {% if page.categories.size > 0 %}
+        <div class="blog-card-tags">
+          {% for cat in page.categories %}
+          <span class="blog-tag">{{ cat }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+          {% if page.author %}
+          <span><i class="bi bi-person"></i> {{ page.author }}</span>
+          {% endif %}
+          <span><i class="bi bi-calendar3"></i> {{ page.date | date: "%B %d, %Y" }}</span>
+          <span><i class="bi bi-clock"></i> {{ read_mins }} min read</span>
+        </div>
+      </header>
+
+      <div class="post-prose" data-aos="fade-up" data-aos-delay="100">
+        {{ content }}
+      </div>
+
+      <footer class="post-footer" data-aos="fade-up">
+        <a href="{{ '/blog/' | relative_url }}" class="btn-get-started btn-outline">
+          <i class="bi bi-grid"></i> All posts
+        </a>
+      </footer>
+    </article>
+  </main>
+
+  <footer id="footer" class="footer ai-footer dark-background">
+    {% include footer.html %}
+  </footer>
+
+  {% include site-scripts.html %}
+
+</body>
+
+</html>
