@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{{ site.title }}</title>
+  <title>{{ site.title }} — {{ site.role }}</title>
   {% include head.html %}
 </head>
 
@@ -16,135 +16,285 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <!-- <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
-
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
+          <div class="col-lg-9">
             <h2>Ali Mehdi</h2>
-            <p>I'm a professional Full Stack | DevOps | AI engineer from Lahore</p>
+            <p class="mb-2"><strong>{{ site.role }}</strong> · {{ site.location }}</p>
+            <p>I build production LLM apps—RAG pipelines, AI APIs, agents, and MLOps on AWS & Kubernetes. Former full-stack and platform engineer; now focused on shipping AI that works under real load.</p>
             <a href="/about" class="btn-get-started">About Me</a>
+            <a href="/blog" class="btn-get-started ms-2">Technical Blog</a>
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
-    <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container" data-aos="fade-up">
-        <h2>Portfolio</h2>
-      </div><!-- End Section Title -->
-    
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Core Skills</h2>
+        <p>End-to-end AI engineering—from embeddings to deployed inference</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>LLM Apps & RAG</span> <i class="val">Expert</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Python / FastAPI</span> <i class="val">Expert</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>LangChain / LlamaIndex</span> <i class="val">Advanced</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Vector DBs & Embeddings</span> <i class="val">Advanced</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>MLOps / Kubernetes</span> <i class="val">Advanced</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>AWS (SageMaker, Bedrock)</span> <i class="val">Advanced</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>React / Full-Stack UI</span> <i class="val">Advanced</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>MLflow / Model Evaluation</span> <i class="val">Proficient</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Tools Section -->
+    <section id="tools" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tools & Platforms</h2>
+        <p>Technologies I use day-to-day on client and internal AI projects</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="bi bi-robot icon"></i></div>
+              <h3>LLMs & APIs</h3>
+              <p>OpenAI (GPT-4o, embeddings) · Anthropic Claude · AWS Bedrock · Hugging Face · Ollama · vLLM</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-orange position-relative">
+              <div class="icon"><i class="bi bi-diagram-3 icon"></i></div>
+              <h3>Orchestration</h3>
+              <p>LangChain · LlamaIndex · LangGraph · Celery · Redis · Pydantic · structured outputs & tool calling</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="bi bi-database icon"></i></div>
+              <h3>Data & Vectors</h3>
+              <p>Pinecone · Chroma · Weaviate · pgvector · OpenSearch · S3 · PostgreSQL · Unstructured.io</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-red position-relative">
+              <div class="icon"><i class="bi bi-cpu icon"></i></div>
+              <h3>ML & Training</h3>
+              <p>PyTorch · scikit-learn · SageMaker · MLflow · W&B · Jupyter · fine-tuning · evaluation harnesses</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-indigo position-relative">
+              <div class="icon"><i class="bi bi-cloud icon"></i></div>
+              <h3>Deploy & MLOps</h3>
+              <p>FastAPI · Docker · EKS · Terraform · GitHub Actions · GPU nodes · autoscaling inference</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item item-pink position-relative">
+              <div class="icon"><i class="bi bi-graph-up icon"></i></div>
+              <h3>Observability</h3>
+              <p>LangSmith · Phoenix (Arize) · Prometheus · Grafana · OpenTelemetry · token & cost tracking</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Tools Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>AI Projects</h2>
+        <p>Representative work across RAG, APIs, fine-tuning, and MLOps</p>
+      </div>
+
       <div class="container">
-    
+
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    
+
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-devops">DevOps</li>
-            <!-- <li data-filter=".filter-ai">AI</li> -->
-            <li data-filter=".filter-full-stack">Full Stack</li>
-          </ul><!-- End Portfolio Filters -->
-    
+            <li data-filter=".filter-ai">LLM & RAG</li>
+            <li data-filter=".filter-mlops">MLOps</li>
+            <li data-filter=".filter-full-stack">AI Products</li>
+          </ul>
+
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-              <img src="assets/img/devops/grafana.png" class="img-fluid" alt="">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Enterprise RAG assistant">
               <div class="portfolio-info">
-                <h4>Grafana</h4>
-                <p>Grafana / Prometheus Monitoring Implementation</p>
-                <a href="assets/img/devops/grafana.png" title="Grafana" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Enterprise RAG Assistant</h4>
+                <p>LangChain · OpenAI embeddings · Pinecone · FastAPI · React — cited answers over 10k+ internal docs</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Enterprise RAG Assistant" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-              <img src="assets/img/devops/aws-eks.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Document Q&A pipeline">
               <div class="portfolio-info">
-                <h4>AWS EKS</h4>
-                <p>AWS EKS Creation through Terraform</p>
-                <a href="assets/img/devops/aws-eks.png" title="AWS EKS" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Document Q&A Pipeline</h4>
+                <p>Hugging Face · Chroma · Python — PDF ingestion, chunking, hybrid search, Ragas evaluation</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Document Q&A Pipeline" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
-    
+            </div>
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-full-stack">
-              <img src="assets/img/fullstack/currikistudio.png" class="img-fluid" alt="">
+              <img src="assets/img/fullstack/currikistudio.png" class="img-fluid" alt="AI-enabled learning platform UI">
               <div class="portfolio-info">
-                <h4>React Application</h4>
-                <p>React Application</p>
-                <a href="assets/img/fullstack/currikistudio.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>AI-Assisted Content UI</h4>
+                <p>React · REST APIs — integrated LLM suggestions into an existing learning platform frontend</p>
+                <a href="assets/img/fullstack/currikistudio.png" title="AI-Assisted Content UI" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://studio.curriki.org" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-full-stack">
-              <img src="assets/img/fullstack/leaflet.png" class="img-fluid" alt="">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mlops">
+              <img src="assets/img/devops/aws-eks.png" class="img-fluid" alt="ML inference on EKS">
               <div class="portfolio-info">
-                <h4>Leaflet Application</h4>
-                <p>Leaflet Application</p>
-                <a href="assets/img/fullstack/leaflet.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>ML Inference on EKS</h4>
+                <p>Kubernetes · MLflow · S3 — versioned model artifacts, rolling deploys, HPA for inference pods</p>
+                <a href="assets/img/devops/aws-eks.png" title="ML Inference on EKS" data-gallery="portfolio-gallery-mlops" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="LLM API gateway">
+              <div class="portfolio-info">
+                <h4>LLM API Gateway</h4>
+                <p>FastAPI · OpenAI · Redis · Prometheus — rate limits, team quotas, streaming SSE responses</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="LLM API Gateway" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mlops">
+              <img src="assets/img/devops/grafana.png" class="img-fluid" alt="LLM observability dashboard">
+              <div class="portfolio-info">
+                <h4>LLM Observability</h4>
+                <p>Grafana · Prometheus · LangSmith — latency, token cost, error rate, and retrieval hit-rate dashboards</p>
+                <a href="assets/img/devops/grafana.png" title="LLM Observability" data-gallery="portfolio-gallery-mlops" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="SageMaker fine-tuning">
+              <div class="portfolio-info">
+                <h4>Domain Fine-Tuning</h4>
+                <p>SageMaker · Hugging Face · MLflow — smaller model tuned on niche terminology vs. zero-shot GPT</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="Domain Fine-Tuning" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Agent workflow automation">
+              <div class="portfolio-info">
+                <h4>Agent Workflow Automation</h4>
+                <p>LangGraph · OpenAI tools · PostgreSQL — multi-step agent with approvals and audit logging</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Agent Workflow Automation" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/blog" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-full-stack">
+              <img src="assets/img/fullstack/leaflet.png" class="img-fluid" alt="Geo AI demo">
+              <div class="portfolio-info">
+                <h4>Geo + LLM Demo</h4>
+                <p>React · Leaflet · FastAPI — map UI with natural-language queries over location metadata</p>
+                <a href="assets/img/fullstack/leaflet.png" title="Geo + LLM Demo" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://demo.yesidevelop.com/leaflet/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-              <img src="assets/img/devops/newrelic.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>New Relic</h4>
-                <p>New Relic Implemenation</p>
-                <a href="assets/img/devops/newrelic.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-              <img src="assets/img/devops/signoz.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Open Telemetry</h4>
-                <p>Open Telemetry</p>
-                <a href="assets/img/devops/signoz.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-    
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
-              <img src="assets/img/devops/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/devops/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>End Portfolio Item -->
-    
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-              <img src="assets/img/devops/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/devops/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>End Portfolio Item -->
-    
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-full-stack">
-              <img src="assets/img/devops/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/devops/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>End Portfolio Item -->
-    
-          </div><!-- End Portfolio Container -->
-    
+
+          </div>
+
         </div>
-    
+
       </div>
-    
+
     </section><!-- /Portfolio Section -->
+
     <div class="container aos-init aos-animate" data-aos="fade-up">
       {{ content }}
     </div>
